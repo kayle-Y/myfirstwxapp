@@ -1,0 +1,16 @@
+<!--pages/message/message.wxml-->
+<text>{{message}}</text>
+
+<view class="container">
+  <view class="input-wrap">
+    <view>身高:</view>
+    <input value="{{height}}" bindinput="inputheight" class="info-input"/>
+  </view>
+  <view class="input-wrap">
+    <view>体重:</view>
+    <input value="{{weight}}" bindinput="inputweight" class="info-input"/>
+  </view>
+
+  <button bindtap="next" class="login">下一步</button>
+  <button bindtap="return" class="login">返回</button>
+</view>
